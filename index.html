@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>password strength</title>
+  <style>
+   *::before, *::after {
+     box-sizing: border-box;
+   }
+
+   body {
+     background-color: hsl(261, 88%, 17%);
+     color: hsl(261, 88%, 90%);
+     text-align: center;
+
+   }
+    
+
+
+      transition: width: 200ms;
+       }
+
+      .password-input {
+        margin-top: 1rem;
+        width: 90%;
+      padding: .25rem .75rem;
+      background-color: hsl(261, 88%, 25%);
+      color: white;
+      border: 1px solid hsl(261, 88%, 57%);
+      outline: none;
+      text-align: center;
+      border-radius: .3rem;
+       }
+
+       .password-input:focus {
+        border-color: hsl(261, 88%, 70%);
+        }
+
+        .reasons > * {
+          margin-top: .5rem;
+          color: hsl(261, 88%, 80% )
+        }
+
+
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <div style="position: absolute; top: 0px; left: 0px;"><i><small>@gonzalote99</small></i></div>
+  <h1>password strength</h1>
+  <div class="strength-meter" id="strength-meter"></div>
+  <input class="password-input" id="password-input" value="password" type="text" autofocus aria-laballedby="password" >
+  <div id="reasons" class="reasons"></div>
+</body>
+</html>
